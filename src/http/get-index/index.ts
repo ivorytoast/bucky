@@ -1,3 +1,7 @@
+import { v4 as uuid } from "https://deno.land/std/uuid/mod.ts";
+
+export default () => uuid.generate();
+
 // TODO: modify the body object!
 let body = `
 <!doctype html>
@@ -22,6 +26,9 @@ let body = `
   </body>
 </html>
 `
+
+let secret = uuid.generate();
+
 /*
 export async function handler (req: object) {
   return {
@@ -56,7 +63,7 @@ export async function handler (req: object) {
       'content-type': 'application/json; charset=utf8',
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0'
     },
-    body: JSON.stringify({name: "YO"})
+    body: JSON.stringify({name: secret})
   }
 }
 
