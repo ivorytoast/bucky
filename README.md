@@ -1,2 +1,0 @@
-# bucky
-Begin app
