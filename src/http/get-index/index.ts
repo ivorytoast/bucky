@@ -22,7 +22,7 @@ let body = `
   </body>
 </html>
 `
-
+/*
 export async function handler (req: object) {
   return {
     statusCode: 200,
@@ -33,6 +33,7 @@ export async function handler (req: object) {
     body
   }
 }
+*/
 
 // Example responses
 
@@ -48,7 +49,6 @@ export async function handler (req: object) {
 }
 */
 
-/* Respond with successful resource creation
 export async function handler (req: object) {
   return {
     statusCode: 201,
@@ -59,7 +59,6 @@ export async function handler (req: object) {
     body: JSON.stringify({ok: true})
   }
 }
-*/
 
 /* Deliver client-side JS
 export async function handler (req: object) {
